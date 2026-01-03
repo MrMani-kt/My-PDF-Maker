@@ -6,11 +6,9 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 import threading
 import time
+import config
 
-TOKEN = "8012790787:AAEnQPZZhpTwfa1T2RP4cZwPYnxwjwzABKk"
-
-
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(config.TOKEN)
 
 
 user_data = {}
